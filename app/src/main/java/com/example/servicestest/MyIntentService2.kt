@@ -16,7 +16,7 @@ class MyIntentService2 : IntentService(NAME) {
     override fun onHandleIntent(intent: Intent?) {
         log("onHandleIntent")
         val page = intent?.getIntExtra(PAGE,0) ?: 0
-        for (i in 0 until 100) {
+        for (i in 0 until 4) {
             Thread.sleep(1000)
             log("Timer $i $page")
         }
